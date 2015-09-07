@@ -1,0 +1,86 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #3b1c2b;
+  font-size: 1em;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+#main {
+  width: 768px;
+  margin: 200px auto;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Josefin Slab', serif;
+  color: #DE9443;
+  font-weight: 400;
+  font-size: 5em;
+  margin-bottom: 85px;
+  margin-top: 50px;
+}
+/*
+  hack for firefox margin-bottom
+  this should be fixed a different way
+  but doing this as a hack for now
+  shame.css
+*/
+@-moz-document url-prefix() {
+  h1 {
+    margin-bottom: 66.4px;
+  }
+}
+
+h2, h3 {
+  padding: 0 10px;
+  background-color: #3b1c2b;
+  margin: 0;
+  display: inline-block;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  position: relative;
+  top: -15px;
+}
+
+h3 a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#text {
+  z-index: 999;
+  position: absolute;
+  width: 768px;
+}
+
+sheet {
+  display: block;
+  height: 500px;
+  position: absolute;
+  top: 20px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #main {
+    margin-top: 300px
+  }
+}
